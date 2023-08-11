@@ -19,6 +19,9 @@ streamlit.header('🍌🥭 Build Your Own Fruit Smoothie 🥝🍇')
 #read fruit dataset and display
 my_fruit_list = pd.read_csv("https://uni-lab-files.s3.us-west-2.amazonaws.com/dabw/fruit_macros.txt")
 
+#set my_fruit_list index to the fruit name
+my_fruit_list = my_fruit_list.set_index("Fruit")
+
 #add Multi-select widget to pandas dataset
 streamlit.multiselect("Pick some fruits:", list(my_fruit_list.index))  #using index lets you pick the fruit by index?
 
