@@ -23,6 +23,7 @@ my_fruit_list = pd.read_csv("https://uni-lab-files.s3.us-west-2.amazonaws.com/da
 my_fruit_list = my_fruit_list.set_index("Fruit")
 
 #add Multi-select widget to pandas dataset
+#setting 'Avocado' and 'Strawberries' as default selection
 fruits_selected = streamlit.multiselect("Pick some fruits:", list(my_fruit_list.index),['Avocado','Strawberries'])  #using index lets you pick the fruit by index?
 #filter dataframe rows by fruit index
 fruits_to_show = my_fruit_list.loc[fruits_selected]
