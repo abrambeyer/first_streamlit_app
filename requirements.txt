@@ -1,2 +1,3 @@
 # requirements.txt
--r https://raw.githubusercontent.com/snowflakedb/snowflake-connector-python/v3.1.0/tested_requirements/requirements_39.reqs
+# -r https://raw.githubusercontent.com/snowflakedb/snowflake-connector-python/v3.1.0/tested_requirements/requirements_39.reqs
+snowflake-connector-python==3.0.4
